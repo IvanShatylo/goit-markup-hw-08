@@ -1,0 +1,45 @@
+.menu-adv {
+    display: flex;
+}
+
+.menu-adv__item {
+    width: 270px;
+    margin-right: 30px;
+}
+
+
+
+.menu-adv__list {
+    margin-top: 0;
+    margin-bottom: 10px;
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 10;
+}
+
+.describing-text {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu-adv__icon {
+    @extend %align;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: 120px;
+    
+  
+    background:#F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.menu-adv__icon-item {
+    width: 70px;
+    height: 70px;
+}

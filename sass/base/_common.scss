@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+font-family: 'Roboto',sans-serif;
+letter-spacing: 0.03em;
+font-size: 14px;
+color:#212121 ;
+background-color: var(--title-text-color);
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.link {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
