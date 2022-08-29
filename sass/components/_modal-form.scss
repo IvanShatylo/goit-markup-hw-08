@@ -127,6 +127,16 @@
     line-height: 1.16;
     cursor: pointer;
     color: var(--accent-color);
+
+    @media screen and (max-wigth: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
   
 .modal-form-check-desc::before {

@@ -10,6 +10,8 @@
         padding-top: 16px;
         padding-bottom: 16px;
     }
+     
+
 
     .main__nav {
     display: flex;
@@ -48,7 +50,11 @@
 }
 
 
-
+@media screen and (max-width: 1199px) {
+    .phone__number {
+        margin-top: 10px ;
+    }
+}
 
 @media screen and (min-width:768px) {
     .mobile-menu-open {
@@ -131,6 +137,7 @@
     }
     
     
+    
     .contact__list {
       font-weight: 500;
       line-height: 1.14;
@@ -142,10 +149,9 @@
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 
-      &:last-child {
-        padding-bottom: 10px;
-      }
+
     
       &:hover,
       &:focus {
@@ -164,6 +170,7 @@
         fill: var(--primary-text-color);
         }
     }
+    
 }
 
 @media screen and (min-width:1200px) {
