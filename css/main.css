@@ -803,7 +803,7 @@ body {
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: #212121;
     margin-bottom: 10px;
   }
   .describing-text {
