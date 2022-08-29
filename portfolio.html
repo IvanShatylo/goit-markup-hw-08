@@ -23,6 +23,11 @@
         <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
        </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
        <ul class="contact list">
         <li class="contanct__item"><a class="contact__list link" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12">
@@ -37,24 +42,91 @@
             +38 096 111 11 11</a>
     </li>
         </ul>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+              <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                  <svg width="40" height="40">
+                      <use href="./images/sprite.svg#icon-vector"></use>
+                  </svg>
+              </button>
+              <ul class="mobile-nav">
+                  <li class="mobile-nav-item">
+                      <a href="" class="mobile-nav-link current">Студія</a>
+                  </li>
+                  <li class="mobile-nav-item">
+                      <a href="" class="mobile-nav-link current">Портфоліо</a>
+                  </li>
+                  <li class="mobile-nav-item">
+                      <a href="" class="mobile-nav-link">Контакти</a>
+                  </li>
+              </ul>
+              <ul class="mobile-contact">
+                  <li class="mobile-contact-item">
+                      <a href="tel:+380961111111" class="mobile-contact-link blue phone-number">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mobile-contact-item">
+                      <a href="mailto:info@devstudio.com" class="mobile-contact-link">info@devstudio.com</a>
+                  </li>
+              </ul>
+              <ul class="mobile-media">
+                  <li class="mobile-media-item">
+                      <a href="" class="mobile-media-link">Instagram</a>
+                  </li>
+                  <li class="mobile-media-item">
+                      <a href="" class="mobile-media-link">Twitter</a>
+                  </li>
+                  <li class="mobile-media-item">
+                      <a href="" class="mobile-media-link">Facebook</a>
+                  </li>
+                  <li class="mobile-media-item">
+                      <a href="" class="mobile-media-link">LinkedIn</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
       </div>
      </header>
         <main>
-            <!--Portfolio-->
+            <!-- Portfolio -->
             <section class="section">
                 <div class="container">
                 <h1 class="visually-hidden">Наша Работа</h1>
                 <ul class="section-but list">
-                    <li class="site-button"><button class="button-link button-c" type="button">Все</button> </li>
-                    <li class="site-button"><button class="button-link" type="button">Веб-сайты</button> </li>
-                    <li class="site-button"><button class="button-link" type="button">Приложения</button> </li>
-                    <li class="site-button"><button class="button-link" type="button">Дизайн</button> </li>
-                    <li class="site-button"><button class="button-link" type="button">Маркетинг</button> </li>
+                    <li class="site-button">
+                        <button class="button-link button-c" type="button">Все</button> 
+                    </li>
+                    <li class="site-button">
+                        
+                        <button class="button-link" type="button">Веб-сайты</button> 
+                    </li>
+                    <li class="site-button">
+                        
+                        <button class="button-link" type="button">Приложения</button> 
+                    </li>
+                    <li class="site-button">
+                        
+                        <button class="button-link" type="button">Дизайн</button> 
+                    </li>
+                    <li class="site-button">
+                        
+                        <button class="button-link" type="button">Маркетинг</button> 
+                    </li>
                 </ul>
                 <ul class="site list ">
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-1.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\technokryak-370\technokryak-370.jpg 1x, ./images\desctop\portfolio-card-set\technokryak-370\technokryak-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\technokryak-354\technokryak-354.jpg 1x, ./images\desctop\portfolio-card-set\technokryak-370\technokryak-370@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\technocryak-450\technocryak-450.jpg 1x, ./images\phone\portfolio-card-set\technocryak-450\technocryak-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-1.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content"><h2 class="site-list">Технокряк</h2>
@@ -64,7 +136,19 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-2.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\poster-new-orlean-370\poster-new-orlean-370.jpg 1x, ./images\desctop\portfolio-card-set\poster-new-orlean-370\poster-new-orlean-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\poster-new-orlean-354\poster-new-orlean-354.jpg 1x, ./images\tablet\portfolio-card-set\poster-new-orlean-354\poster-new-orlean-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\poster-new-orlean-450\poster-new-orlean-450.jpg 1x, ./images\phone\portfolio-card-set\poster-new-orlean-450\poster-new-orlean-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-2.jpg" alt="Сайт">
+                            </picture>
+                        
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -75,7 +159,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-3.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\seafood-370\seafood-370.jpg 1x, ./images\desctop\portfolio-card-set\seafood-370\seafood-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\seafood-354\seafood-354.jpg 1x, ./images\tablet\portfolio-card-set\seafood-354\seafood-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\seafood-450\seafood-450.jpg 1x, ./images\phone\portfolio-card-set\seafood-450\seafood-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-3.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -86,7 +181,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-4.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\prime-370\prime-370.jpg 1x, ./images\desctop\portfolio-card-set\prime-370\prime-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\prime-354\prime-354.jpg 1x, ./images\tablet\portfolio-card-set\prime-354\prime-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\prime-450\prime-450.jpg 1x, ./images\phone\portfolio-card-set\prime-450\prime-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-4.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -97,7 +203,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-5.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\boxes-370\boxes-370.jpg 1x, ./images\desctop\portfolio-card-set\boxes-370\boxes-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\boxes-354\boxes-354.jpg 1x, ./images\tablet\portfolio-card-set\boxes-354\boxes-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\boxes-450\boxes-450.jpg 1x, ./images\phone\portfolio-card-set\boxes-450\boxes-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-5.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -108,7 +225,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-6.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\inspiration-370\inspiration-370.jpg 1x, ./images\desctop\portfolio-card-set\inspiration-370\inspiration-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\inspiration-354\inspiration-354.jpg 1x, ./images\tablet\portfolio-card-set\inspiration-354\inspiration-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\inspiration-450\inspiration-450.jpg 1x, ./images\phone\portfolio-card-set\inspiration-450\inspiration-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-6.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -119,7 +247,18 @@
                     </li>
                     <li class="site-item "> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-7.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\limited-edition-370\limited-edition-370.jpg 1x, ./images\desctop\portfolio-card-set\limited-edition-370\limited-edition-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\limited-edition-354\limited-edition-354.jpg 1x, ./images\tablet\portfolio-card-set\limited-edition-354\limited-edition-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\limited-edition-450\limited-edition-450.jpg 1x, ./images\phone\portfolio-card-set\limited-edition-450\limited-edition-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-7.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -130,7 +269,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-8.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\lab-370\lab-370.jpg 1x, ./images\desctop\portfolio-card-set\lab-370\lab-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\lab-354\lab-354.jpg 1x, ./images\tablet\portfolio-card-set\lab-354\lab-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\lab-450\lab-450.jpg 1x, ./images\phone\portfolio-card-set\lab-450\lab-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-8.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -141,7 +291,18 @@
                     </li>
                     <li class="site-item"> <a class="link site-link" href="">
                         <div class="projects-thumb">
-                        <img src="./images/site/site-9.jpg" alt="Сайт" width="370" height="290">
+                            <picture>
+                                <source
+                                    srcset="./images\desctop\portfolio-card-set\growing-business-370\growing-business-370.jpg 1x, ./images\desctop\portfolio-card-set\growing-business-370\growing-business-370@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images\tablet\portfolio-card-set\growing-business-354\growing-business-354.jpg 1x, ./images\tablet\portfolio-card-set\growing-business-354\growing-business-354@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images\phone\portfolio-card-set\growing-business-450\growing-business-450.jpg1x, ./images\phone\portfolio-card-set\growing-business-450\growing-business-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                    <img src="./images/site/site-9.jpg" alt="Сайт">
+                            </picture>
                         <p class="projects-label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                         <div class="site-content">
@@ -154,11 +315,13 @@
              </div>
             </section>
         </main>
+        <!-- Footer -->
         <footer class="footer">
-            <!--Footer-->
+            
             <div class="container div-footer">
-                <div>
-                <a class="logo-footer link" lang="en" href="./index.html"><span class="logo-color">Web</span>Studio</a>
+                <div class="footer-wrapper">
+                <div class="address-wrapper">
+                <a class="logo-footer link" lang="en" href="./index.html"><span class="logo-footer-color">Web</span>Studio</a>
                 <ul class="contact-us list">
                     <li class="contact-us-list"><a class="contact-us-item link" href="https://goo.gl/maps/o7B5cLgCJzoSrLnL8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="contact-us-list"><a class="contact-us-item dark link" href="mailto:info@example.com">info@example.com</a></li>
@@ -166,7 +329,7 @@
                 </ul>
                 </div>
                 <div class="join-social">
-                    <h3 class="social-title">Присоединяйтесь</h3>
+                    <h3 class="social-title footer-title">Присоединяйтесь</h3>
                     <ul class="social_list list">
                         <li class="social_list-item">
                             <a href="" class="social-link">
@@ -194,8 +357,9 @@
                     </li>
                     </ul>
                 </div>
+            </div>
                 <form action="" class="footer-subscribe">
-                    <h3 class="social-title">Подпишитесь на рассылку</h3>
+                    <h3 class="social-title footer-title">Подпишитесь на рассылку</h3>
                     <div class="footer-form">
                         <input type="email" name="user-mail" class="footer-form-input" placeholder="E-mail"/>
                         <button type="submit" class="footer-button-form">
@@ -208,5 +372,8 @@
                 </form>
             </div>
         </footer>
+
+        <script src="./js/mobile.menu.js"></script>
+
     </body>
 </html>

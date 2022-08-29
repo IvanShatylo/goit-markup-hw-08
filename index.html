@@ -14,7 +14,7 @@
 <body>
     <!--Header-->
    <header class="header">
-    <div class="container main__nav">
+  <div class="container main__nav">
     <nav class="navigation">
     <a class="logo link" lang="en" href="./index.html"><span class="logo__color">Web</span>Studio</a>
     <ul class="nav list">
@@ -23,6 +23,11 @@
         <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
     </ul>
     </nav>
+    <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+    </button>
     <ul class="contact list">
         <li class="contanct__item"><a class="contact__list link" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12">
@@ -37,10 +42,53 @@
             +38 096 111 11 11</a>
         </li>
     </ul>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-vector"></use>
+            </svg>
+        </button>
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link current">Студія</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link ">Портфоліо</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link">Контакти</a>
+            </li>
+        </ul>
+        <ul class="mobile-contact">
+            <li class="mobile-contact-item">
+                <a href="tel:+380961111111" class="mobile-contact-link phone-number">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contact-link">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-media">
+            <li class="mobile-media-item">
+                <a href="" class="mobile-media-link link">Instagram</a>
+            </li>
+            <li class="mobile-media-item">
+                <a href="" class="mobile-media-link link">Twitter</a>
+            </li>
+            <li class="mobile-media-item">
+                <a href="" class="mobile-media-link link">Facebook</a>
+            </li>
+            <li class="mobile-media-item">
+                <a href="" class="mobile-media-link link">LinkedIn</a>
+            </li>
+        </ul>
+      </div>
     </div>
+  </div>
+    
     </header>
    <main>
-    <!--Main-Section-->
+    <!-- Main-Section -->
     <section class="main-section section" >
         <div class="container">
         <h1 class="main-section__item">Эффективные решения для вашего бизнеса</h1>
@@ -93,24 +141,42 @@
     </section>
     <section class="section section-d">
         <!--What are we doing-->
-        <div class="container">
+       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="section-list list">
             <li class="section-foto">
                 <div class="doing-thumb">
-                <img src="./images/doing/box_1.jpg" alt="Работаем за компьютером" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                        ./images\desctop\services\design-solutions-370\design-solutions-370.jpg 1x,
+                        ./images\desctop\services\design-solutions-370\design-solutions-370@2x.jpg 2x
+                      " media="(min-width: 1200px)">
+                        <img src="./images/doing/box_1.jpg" alt="Работаем за компьютером" width="370" height="294">
+                    </picture>
             <p class="doing-title">Десктопні додатки</p>
             </div>
             </li>
             <li class="section-foto">
                 <div class="doing-thumb">
-                <img src="./images/doing/box_2.jpg" alt="Работаем в телефоне" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                        ./images\desctop\services\desktop-app-370\desktop-app-370.jpg 1x,
+                        ./images\desctop\services\desktop-app-370\desktop-app-370@2x.jpg 2x
+                      " media="(min-width: 1200px)">
+                      <img src="./images/doing/box_2.jpg" alt="Работаем в телефоне" width="370" height="294">
+                    </picture>
                <p class="doing-title">Мобільні додатки</p> 
             </div>
             </li>
             <li class="section-foto">
                 <div class="doing-thumb">
-                <img src="./images/doing/box_3.jpg" alt="Работаем в планшете" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                        ./images\desctop\services\mobile-app-370\mobile-app-370.jpg 1x,
+                        ./images\desctop\services\mobile-app-370\mobile-app-370@2x.jpg 2x
+                      " media="(min-width: 1200px)">
+                      <img src="./images/doing/box_3.jpg" alt="Работаем в планшете" width="370" height="294">
+                    </picture>
             <p class="doing-title">Дизайнерські рішення</p>
             </div>
             </li>
@@ -119,11 +185,16 @@
     </section>
     <section class="section section-c">
         <!--Our team-->
-    <div class="container">
+     <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
             <li class="team-item">
-                <img src="./images/team/team_card-1.jpg" alt="Фото команды" width="270" height="260">
+                <picture>
+                    <source srcset="./images\desctop\team\igor-270\igor-270.jpg 1x, ./images\desctop\team\igor-270\igor-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images\tablet\team\igor-354\igor-354.jpg 1x, ./images\tablet\team\igor-354\igor-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images\phone\team\igor-450\igor-450.jpg 1x, ./images\phone\team\igor-450\igor-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="./images/team/team_card-1.jpg" alt="Фото команды">
+                </picture>
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-position" lang="en">Product Designer</p>
                 <ul class="social_list-icon">
@@ -153,7 +224,13 @@
                     </li>
                 </ul>
             </li>
-            <li class="team-item"><img src="./images/team/team_card-2.jpg" alt="Фото Команды" width="270" height="260">
+            <li class="team-item">
+                <picture>
+                    <source srcset="./images\desctop\team\olga-270\olga-270.jpg 1x, ./images\desctop\team\olga-270\olga-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images\tablet\team\olga-354\olga-354.jpg 1x, ./images\tablet\team\olga-354\olga-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images\phone\team\olga-450\olga-450.jpg 1x, ./images\phone\team\olga-450\olga-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="./images/team/team_card-2.jpg" alt="Фото Команды">
+                </picture>
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-position" lang="en">Frontend Developer</p>
                 <ul class="social_list-icon">
@@ -183,7 +260,13 @@
                     </li>
                 </ul>
             </li>
-            <li class="team-item"><img src="./images/team/team_card-3.jpg" alt="Фото Команды" width="270" height="260">
+            <li class="team-item">
+                <picture>
+                    <source srcset="./images\desctop\team\nikolay-270\nikolay-270.jpg 1x, ./images\desctop\team\nikolay-270\nikolay-270@2x.jpg 2x" media="(min-width: 1200px)"> 
+                    <source srcset="./images\tablet\team\nikolay-354\nikolay-354.jpg 1x, ./images\tablet\team\nikolay-354\nikolay-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images\phone\team\nikolay-450\nikolay-450.jpg 1x, ./images\phone\team\nikolay-450\nikolay-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="./images/team/team_card-3.jpg" alt="Фото Команды">
+                </picture>
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-position" lang="en">Marketing</p>
                 <ul class="social_list-icon">
@@ -213,7 +296,13 @@
                     </li>
                 </ul>
             </li>
-            <li class="team-item"><img src="./images/team/team_card-4.jpg" alt="Фото Команды" width="270" height="260">
+            <li class="team-item">
+                <picture>
+                    <source srcset="./images\desctop\team\mykhail-270\mykhail-270.jpg 1x, ./images\desctop\team\mykhail-270\mykhail-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images\tablet\team\mykhail-354\mykhail-354.jpg 1x, ./images\tablet\team\mykhail-354\mykhail-354@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images\phone\team\mykhail-450\mykhail-450.jpg 1x, ./images\phone\team\mykhail-450\mykhail-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="./images/team/team_card-4.jpg" alt="Фото Команды" >
+                </picture>
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-position" lang="en">UI Designer</p>
                 <ul class="social_list-icon">
@@ -296,10 +385,11 @@
         </div>
       </section>
    </main>
+   <!--Footer-->
    <footer class="footer">
-    <!--Footer-->
-<div class="container div-footer">
-    <div>
+    <div class="container div-footer">
+    <div class="footer-wrapper">
+    <div class="address-wrapper">
     <a class="logo-footer link" lang="en" href="./index.html"><span class="logo-footer-color">Web</span>Studio</a>
     <ul class="contact-us list">
         <li class="contact-us-list"><a class="contact-us-item link" href="https://goo.gl/maps/o7B5cLgCJzoSrLnL8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -308,7 +398,7 @@
     </ul>
     </div>
     <div class="join-social">
-        <h3 class="social-title">Присоединяйтесь</h3>
+        <h3 class="social-title footer-title">Присоединяйтесь</h3>
         <ul class="social_list list">
             <li class="social_list-item">
                 <a href="" class="social-link">
@@ -336,8 +426,9 @@
             </li>
         </ul>
     </div>
+  </div>
     <form action="" class="footer-subscribe">
-        <h3 class="social-title">Подпишитесь на рассылку</h3>
+        <h3 class="social-title footer-title">Подпишитесь на рассылку</h3>
         <div class="footer-form">
             <input type="email" name="user-mail" class="footer-form-input" placeholder="E-mail"/>
             <button type="submit" class="footer-button-form">
@@ -426,6 +517,9 @@
     </div>
    </div>
 
+   <script src="./js/mobile.menu.js"></script>
+
    <script src="./js/modal.js"></script>
+
 </body>
 </html>

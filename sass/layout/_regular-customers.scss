@@ -1,11 +1,27 @@
 .client-list {
     display: flex;
-    justify-content: center;
     gap: 30px;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
   }
   
   .clients-list-item {
-    width: calc((100% - 150px) / 6);
+    width: 210px;
+    height: 92px;
+    
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 30px) / 2);
+   }
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+   } 
+
+   @media screen and (min-width: 1200px) {
+      width: 170px;
+   }
   }
   
   .clients-link {
