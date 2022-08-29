@@ -135,7 +135,7 @@ body {
     width: 320px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768x) {
   .modal {
     width: 450px;
   }
@@ -268,7 +268,13 @@ body {
   cursor: pointer;
   color: var(--accent-color);
 }
-@media screen and (max-wigth: 1199px) {
+@media screen and (min-width: 480px) {
+  .modal-form-check-desc {
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-wigth: 768px) {
   .modal-form-check-desc {
     font-size: 12px;
     line-height: 1.16;
@@ -1058,6 +1064,7 @@ body {
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 

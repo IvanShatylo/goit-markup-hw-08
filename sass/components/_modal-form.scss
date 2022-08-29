@@ -128,7 +128,12 @@
     cursor: pointer;
     color: var(--accent-color);
 
-    @media screen and (max-wigth: 1199px) {
+    @media screen and (min-width: 480px) {
+        font-size: 14px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-wigth: 768px) {
         font-size: 12px;
         line-height: 1.16;
     }
